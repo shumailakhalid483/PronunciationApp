@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:id="@+id/etForEnterText"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_60sdp"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       />
+
+   <Button
+       android:id="@+id/buttonAmerican"
+       app:layout_constraintTop_toBottomOf="@id/etForEnterText"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_45sdp"
+       android:text="American English"
+       android:layout_marginTop="@dimen/_10sdp"
+       />
+   <Button
+       android:id="@+id/buttonUs"
+       app:layout_constraintTop_toBottomOf="@id/buttonAmerican"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_45sdp"
+       android:text="Us English"
+       android:layout_marginTop="@dimen/_10sdp"
+       />
+   <Button
+       android:id="@+id/buttonSpeak"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/buttonUs"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginEnd="@dimen/_10sdp"
+       android:text="Speak"
+       android:layout_marginTop="@dimen/_10sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
